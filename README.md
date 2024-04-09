@@ -16,12 +16,12 @@ mvn spring-boot:run
 
 To use the API, send a GET request to the /calculate endpoint with the product prices and the rule number:
 
-curl "http://localhost:8080/api/bogo/calculate?prices=10,20,30,40,50,60&rule=3"
+curl "http://localhost:8080/api/bogo/calculate?prices=10,20,30,40,50,60&rule=1"
 
 #### Response:
 
 {
-  "discountedItems": [50, 40, 20, 10],
-  "payableItems": [60, 60, 40, 30]
+  "discountedItems": [50, 30, 10],
+  "payableItems": [60, 40, 20]
 }
 
